@@ -1,77 +1,106 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-
-  <meta charset="UTF-8">
-  <title>Lorem Grid</title>
-
-  <!-- Bootstrap CDN -->
+  <title>Max Temperature</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-  <!-- Creates the Overall Grid -->
-  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../landing.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Row 1 -->
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Max Temperature</h1>
-      </div>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../visualizations/MaxTemperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="../visualizations/Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="../visualizations/Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="../visualizations/WindSpeed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Comparisons.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- Row 2 -->
-    <div class="row">
-      <div class="col-md-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt optio provident tempora amet, eveniet et, eum illum, culpa laborum dicta recusandae magni architecto. Illo saepe facilis, unde. Debitis, atque, doloremque?</p>
-      </div>
-      <div class="col-md-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur itaque, ipsam nihil. Alias, nemo.</p>
-      </div>
-      <div class="col-md-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione sint ex porro excepturi non dolorum, ullam ea quae vel earum, soluta obcaecati natus. Eligendi iusto accusantium mollitia debitis assumenda!</p>
-      </div>
-    </div>
+      <div class="parent-container d-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Max Temperature</h1>
+                    <hr>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-12">
+                    <a href="#"><img src="../assets/Fig1.png" alt="inn_logo"></a>
+                </div>
+            </div>    
+            <hr>
+        <div>
+        <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude)
+          More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year
+          than the northern hemisphere. This may be due to the tilt of the earth at the time 
+          of the year this data was gathered.</p>
+        </div>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Visualizations</h1>
+                </div>
+            </div>
+            <div class="well text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href='../visualizations/MaxTemperature.html'><img src="../assets/Fig1.png" alt="..." class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href='../visualizations/Humidity.html'><img src="../assets/Fig2.png" alt="..." class="img-thumbnail">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href='../visualizations/Cloudiness.html'><img src="../assets/Fig3.png" alt="..." class="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                          <a href='../visualizations/WindSpeed.html'><img src="../assets/Fig4.png" alt="..." class="img-thumbnail">
+                        </div>
+                    </div>
+                  </div>
 
-    <!-- Row 3 -->
-    <div class="row">
-      <div class="col-md-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-      </div>
-      <div class="col-md-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-      </div>
-      <div class="col-md-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-      </div>
-      <div class="col-md-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-      </div>
-      <div class="col-md-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-      </div>
-      <div class="col-md-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Row 4 -->
-    <div class="row">
-      <div class="col-md-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo voluptates blanditiis nisi! Ullam dolore aspernatur, ratione error similique veniam iusto, labore repellat eaque nostrum optio doloribus illo nihil dolor?</p>
-      </div>
-      <div class="col-md-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p>
-      </div>
-    </div>
-  </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</body>
 
+</body>
 </html>
